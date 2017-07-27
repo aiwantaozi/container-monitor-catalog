@@ -1,5 +1,13 @@
 container-monitor-agent:
   image: webank/container-monitor:v0.0.0.1
+  net: host
   tty: true
   environment:
       PROMETHEUS_GATEWAY: ${PROMETHEUS_GATEWAY}
+    volumes:
+    - /lib/modules:/lib/modules (ro)
+    - /proc:/host/proc
+    - /dev:/host/dev
+    - /var/run/docker.sock:/var/run/docker.sock
+  privileged: true
+  pid: host
