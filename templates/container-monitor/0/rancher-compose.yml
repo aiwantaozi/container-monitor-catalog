@@ -10,5 +10,10 @@
     description: "Prometheus push gateway address, for example http://10.255.18.40:8080"
     required: true
     type: "string"
+  - variable: "DEBUG"
+    label: "debug flag"
+    description: "use for print debug log"
+    required: false
+    type: "boolean"
 
 container-monitor-agent:
