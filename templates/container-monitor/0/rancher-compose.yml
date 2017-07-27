@@ -1,0 +1,14 @@
+.catalog:
+  name: "Container-Monitor-Agent"
+  version: "0.0.1"
+  description: "Container Monitor Agent"
+  uuid: container-monitor-agent-1
+  minimum_rancher_version: v1.4.3
+  questions:
+  - variable: "PROMETHEUS_GATEWAY"
+    label: "Prometheus Gateway Address"
+    description: "Prometheus push gateway address, for example http://10.255.18.40:8080"
+    required: true
+    type: "string"
+
+container-monitor-agent:

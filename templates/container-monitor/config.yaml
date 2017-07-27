@@ -1,0 +1,5 @@
+name: Container-Monitor-Agent
+description: |
+  Container monitor agent, monitor container and push data to prometheus gateway.
+version: 0.0.1
+category: Monitoring
