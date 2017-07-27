@@ -4,7 +4,7 @@ container-monitor-agent:
   tty: true
   environment:
       PROMETHEUS_GATEWAY: ${PROMETHEUS_GATEWAY}
-    volumes:
+  volumes:
     - /lib/modules:/lib/modules (ro)
     - /proc:/host/proc
     - /dev:/host/dev
