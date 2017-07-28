@@ -5,6 +5,8 @@ container-monitor-agent:
   environment:
       PROMETHEUS_GATEWAY: ${PROMETHEUS_GATEWAY}
       DEBUG: ${DEBUG}
+      CONTAINER_STATUS_INTERVAL: ${CONTAINER_STATUS_INTERVAL}
+      CONTAINER_METRIC_INTERVAL: ${CONTAINER_METRIC_INTERVAL}      
   volumes:
     - /lib/modules:/lib/modules (ro)
     - /proc:/host/proc
