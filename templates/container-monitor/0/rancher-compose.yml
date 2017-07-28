@@ -15,5 +15,15 @@
     description: "use for print debug log"
     required: false
     type: "boolean"
+  - variable: "CONTAINER_STATUS_INTERVAL"
+    label: "Container status interval"
+    description: "the time interval to get the container status"
+    required: false
+    type: "int"
+  - variable: "CONTAINER_METRIC_INTERVAL"
+    label: "Container metric interval"
+    description: "the time interval to get the container metric"
+    required: false
+    type: "int"
 
 container-monitor-agent:
